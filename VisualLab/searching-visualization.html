@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VisualLab - Searching Visualization</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+<body>
+    <nav class="main-nav">
+        <div class="logo">
+            <h1>VisualLab</h1>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li class="dropdown">
+                <a href="#">Trees</a>
+                <ul class="dropdown-content">
+                    <li><a href="tree-visualization.html">Binary Search Tree</a></li>
+                    <li><a href="tree-visualization.html">Red-Black Tree</a></li>
+                    <li><a href="tree-visualization.html">AVL Tree</a></li>
+                    <li><a href="tree-visualization.html">B-Tree</a></li>
+                    <li><a href="tree-visualization.html">Trie</a></li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a href="#">Graphs</a>
+                <ul class="dropdown-content">
+                    <li><a href="graph-visualization.html">DFS Traversal</a></li>
+                    <li><a href="graph-visualization.html">BFS Traversal</a></li>
+                    <li><a href="graph-visualization.html">Dijkstra's Algorithm</a></li>
+                    <li><a href="graph-visualization.html">Prim's Algorithm</a></li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a href="#">Sorting</a>
+                <ul class="dropdown-content">
+                    <li><a href="sorting-visualization.html">Bubble Sort</a></li>
+                    <li><a href="sorting-visualization.html">Quick Sort</a></li>
+                    <li><a href="sorting-visualization.html">Merge Sort</a></li>
+                    <li><a href="sorting-visualization.html">Heap Sort</a></li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a href="#">Searching</a>
+                <ul class="dropdown-content">
+                    <li><a href="#" class="active">Binary Search</a></li>
+                    <li><a href="#">Linear Search</a></li>
+                    <li><a href="#">Interpolation Search</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <header>
+            <h1>Searching Visualization</h1>
+            <p>Understand search algorithms with interactive examples</p>
+        </header>
+
+        <div class="controls">
+            <select id="searchType">
+                <option value="binary">Binary Search</option>
+                <option value="linear">Linear Search</option>
+                <option value="interpolation">Interpolation Search</option>
+            </select>
+            <input type="number" id="arraySize" value="20" min="5" max="100">
+            <label for="arraySize">Array Size</label>
+            <input type="number" id="searchValue" placeholder="Enter search value">
+            <button id="generateBtn">Generate Sorted Array</button>
+            <button id="searchBtn">Search</button>
+            <button id="resetBtn">Reset</button>
+        </div>
+
+        <div class="visualization-container">
+            <div id="arrayContainer"></div>
+        </div>
+
+        <div class="log-container">
+            <h3>Operation Log</h3>
+            <div id="log"></div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <p>Email: <a href="mailto:shaikat01248@gmail.com">shaikat01248@gmail.com</a></p>
+                <p>GitHub: <a href="https://github.com/SH4IKVT" target="_blank">@SH4IKVT</a></p>
+            </div>
+            <div class="footer-section">
+                <h3>Connect</h3>
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/shaikat-exp01248/" target="_blank" class="social-icon">
+                        <i class="fab fa-linkedin"></i> LinkedIn
+                    </a>
+                    <a href="https://github.com/SH4IKVT" target="_blank" class="social-icon">
+                        <i class="fab fa-github"></i> GitHub
+                    </a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>About</h3>
+                <p>A visual learning tool for understanding data structures and algorithms.</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 VisualLab. Built by Shaikat</p>
+        </div>
+    </footer>
+
+    <script src="searching.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>

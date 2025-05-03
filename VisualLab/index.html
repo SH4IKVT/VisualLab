@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VisualLab - Data Structure Visualizations</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="main-nav">
+        <div class="logo">
+            <h1>VisualLab</h1>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#" class="active">Home</a></li>
+            <li class="dropdown">
+                <a href="#">Trees</a>
+                <ul class="dropdown-content">
+                    <li><a href="#tree-visualization">Binary Search Tree</a></li>
+                    <li><a href="#tree-visualization">Red-Black Tree</a></li>
+                    <li><a href="#tree-visualization">AVL Tree</a></li>
+                    <li><a href="#tree-visualization">B-Tree</a></li>
+                    <li><a href="#tree-visualization">Trie</a></li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a href="#">Graphs</a>
+                <ul class="dropdown-content">
+                    <li><a href="#graph-visualization">DFS Traversal</a></li>
+                    <li><a href="#graph-visualization">BFS Traversal</a></li>
+                    <li><a href="#graph-visualization">Dijkstra's Algorithm</a></li>
+                    <li><a href="#graph-visualization">Prim's Algorithm</a></li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a href="#">Sorting</a>
+                <ul class="dropdown-content">
+                    <li><a href="#sorting-visualization">Bubble Sort</a></li>
+                    <li><a href="#sorting-visualization">Quick Sort</a></li>
+                    <li><a href="#sorting-visualization">Merge Sort</a></li>
+                    <li><a href="#sorting-visualization">Heap Sort</a></li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a href="#">Searching</a>
+                <ul class="dropdown-content">
+                    <li><a href="#searching-visualization">Binary Search</a></li>
+                    <li><a href="#searching-visualization">Linear Search</a></li>
+                    <li><a href="#searching-visualization">Interpolation Search</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="hero-section">
+        <div class="container">
+            <h1>VisualLab</h1>
+            <p style="color: blue;" >Interactive visualizations of data structures and algorithms</p>
+            <div class="featured-visualizations">
+                <div class="visualization-card">
+                    <h3>Trees</h3>
+                    <p style="color: blue;">Explore different types of trees and their operations</p>
+                </div>
+                <div class="visualization-card">
+                    <h3>Graphs</h3>
+                    <p style="color: blue;">Learn graph traversal and algorithms through visualization</p>
+                </div>
+                <div class="visualization-card">
+                    <h3>Sorting</h3>
+                    <p style="color: blue;">Watch sorting algorithms in action</p>
+                </div>
+                <div class="visualization-card">
+                    <h3>Searching</h3>
+                    <p style="color: blue;">Understand search algorithms with interactive examples</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <header>
+            <h1>VisualLab</h1>
+            <p>Tree Data Structure Visualization</p>
+        </header>
+
+        <div class="controls">
+            <select id="treeType">
+                <option value="bst">Binary Search Tree</option>
+                <option value="rbt">Red-Black Tree</option>
+                <option value="avl">AVL Tree</option>
+            </select>
+            <input type="number" id="numberInput" placeholder="Enter a number">
+            <button id="insertBtn">Insert</button>
+            <button id="deleteBtn">Delete</button>
+            <button id="clearBtn">Clear Storage</button>
+        </div>
+
+        <div class="canvas-container">
+            <canvas id="treeCanvas"></canvas>
+        </div>
+
+        <div class="log-container">
+            <h3>Operation Log</h3>
+            <div id="log"></div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <p>Email: <a href="mailto:shaikat01248@gmail.com">shaikat01248@gmail.com</a></p>
+                <p>GitHub: <a href="https://github.com/SH4IKVT" target="_blank">@SH4IKVT</a></p>
+            </div>
+            <div class="footer-section">
+                <h3>Connect</h3>
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/shaikat-exp01248/" target="_blank" class="social-icon">
+                        <i class="fab fa-linkedin"></i> LinkedIn
+                    </a>
+                    <a href="https://github.com/SH4IKVT" target="_blank" class="social-icon">
+                        <i class="fab fa-github"></i> GitHub
+                    </a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>About</h3>
+                <p>A visual learning tool for understanding tree data structures.</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 VisualLab. Built by Shaikat</p>
+        </div>
+    </footer>
+
+    <script src="tree.js"></script>
+    <script src="main.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</body>
+</html>
